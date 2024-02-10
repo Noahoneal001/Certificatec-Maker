@@ -12,6 +12,10 @@ body {
     order: 0;
 }
 
+.font1 {
+    font-family: 'Pacifico', cursive;
+}
+
 .CertificateBox {
     display: flex;
     flex-direction: column;
@@ -22,12 +26,10 @@ body {
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
     font-size: 4em;
 }
 
 h4 {
-    font-family: 'Pacifico', cursive;
     font-size: 2em;
 }
 
@@ -37,7 +39,6 @@ h1.CertificateName {
 }
 
 h2 {
-    font-family: 'Pacifico', cursive;
     font-size: 2em;
 }
 

@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         else {
             Name.innerText = CertificateNameOutput
         };
+        updateDate();
     });
 
     document.getElementById(`stylechose`).addEventListener(`change`, function (valueData) {
@@ -20,8 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById(`print`).addEventListener(`click`, function () {
+        updateDate();
         window.print();
     });
+
+    function updateDate() {
+        let todaysDate = new Date().toLocaleDateString(`en-us`, { year: "numeric", month: "numeric", day: "numeric" });
+        document.getElementById(`date`).innerText = todaysDate;
+    }
 
     function swaper(valueSwaper) {
         let sample = document.getElementById(`isWhat`)
@@ -48,8 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 sample.innerText = isA[2];
                 signer.innerText = signerList[1]
                 break;
-
         }
+        updateDate();
     };
 
 });

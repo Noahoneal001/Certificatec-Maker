@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Monsieur+La+Doulaise&family=Pacifico&family=Workbench&display=swap');
 
 body {
     display: flex;
@@ -14,6 +14,15 @@ body {
 
 .font1 {
     font-family: 'Pacifico', cursive;
+}
+
+.font2 {
+    font-family: "Great Vibes", cursive;
+    text-decoration: none;
+}
+
+.font3 {
+    font-family: "Workbench", sans-serif;
 }
 
 .CertificateBox {
